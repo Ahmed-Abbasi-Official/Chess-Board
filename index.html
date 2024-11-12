@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syalani Project</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: #333;
+    }
+    #container {
+      display: flex;
+      align-items: center;
+    }
+    .side-numbers {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10px;
+    }
+    .side-number {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #chess_board {
+      display: flex;
+      /* background-color: brown; */
+      /* padding: 20px; */
+      /* border-radius: 10px; */
+    }
+    #tbody td {
+      width: 40px;
+      height: 40px;
+    }
+    .chess-label {
+      font-weight: bold;
+      text-align: center;
+      color: white;
+    }
+    #tbody{
+        border: 1px solid white;
+    }
+    #parent{
+      background-color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <section id="parent">
+    <div id="top_side" style="display: flex; gap: 32px; margin-left: 40px; margin-top: 20px;"></div>
+    <div id="container">
+      
+      <!-- Left Side Numbers -->
+      <div id="left_numbers" class="side-numbers"></div>
+  
+      <!-- Chessboard Section -->
+      <section id="chess_board">
+        <table id="tbody"></table>
+      </section>
+  
+      <!-- Right Side Numbers -->
+      <div id="right_numbers" class="side-numbers"></div>
+    </div>
+    <div id="down_side" style="display: flex; gap: 32px; margin-left: 40px;"></div>
+  </section>
+  <script src="./index.js"></script>
+</body>
+</html>

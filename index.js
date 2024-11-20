@@ -15,7 +15,7 @@
 
          if (i >= 0 && j >= 0) {
           td.style.padding = "0";
-          td.style.backgroundColor = (i + j) % 2 === 0 ? "white" : "#000";
+          td.style.backgroundColor = (i + j) % 2 === 0 ? "white" : "brown";
         }
 
         tr.appendChild(td);

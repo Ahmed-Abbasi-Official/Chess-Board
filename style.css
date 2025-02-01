@@ -1,4 +1,53 @@
-
-#chess_board{
-
-}
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: #333;
+    }
+    #container {
+      display: flex;
+      align-items: center;
+    }
+    .side-numbers {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10px;
+    }
+    .side-number {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #chess_board {
+      display: flex;
+      /* background-color: brown; */
+      /* padding: 20px; */
+      /* border-radius: 10px; */
+    }
+    #tbody td {
+      width: 40px;
+      height: 40px;
+    }
+    .chess-label {
+      font-weight: bold;
+      text-align: center;
+      color: white;
+    }
+    #tbody{
+        border: 1px solid white;
+    }
+    #parent{
+      background-color: brown;
+    }
